@@ -64,10 +64,8 @@ def print_spiciest_foods(spicy_foods)
   # your code here
   spicy_foods.each do |newFood1|
     puts "#{newFood1[:name]} (#{newFood1[:cuisine]}) | 
-    if [:heat_level] >5 
-    Heat Level: #{"🌶" * newFood1[:heat_level]}"
-    else
-   0
+    if [:heat_level]>5 
+    Heat Level: #{"🌶" * newFood1[:heat_level]}
     end
   end
 end
