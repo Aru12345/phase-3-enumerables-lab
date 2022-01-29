@@ -63,11 +63,15 @@ end
 def print_spiciest_foods(spicy_foods)
   # your code here
   spicy_foods.each do |newFood1|
-    puts "#{newFood1[:name]} (#{newFood1[:cuisine]}) | Heat Level: #{"🌶" * newFood1[:heat_level]>5}"
-   
+    puts "#{newFood1[:name]} (#{newFood1[:cuisine]}) | 
+    if [:heat_level] >5 
+    Heat Level: #{"🌶" * newFood1[:heat_level]}"
+    else
+   0
+    end
   end
 end
-end
+
 # given an array of spicy foods, return an integer representing 
 # the average heat level of all the spicy foods in the array
 def average_heat_level(spicy_foods)
